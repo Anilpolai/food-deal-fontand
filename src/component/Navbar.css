@@ -1,13 +1,14 @@
+/* Import Brand Font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/* Brand Name */
+/* ============ Branding ============ */
 .brand-name {
   font-family: 'Pacifico', cursive;
   font-size: 1.5rem;
   color: #ff5722;
 }
 
-/* General nav-link */
+/* ============ General Nav Links ============ */
 .nav-link {
   cursor: pointer;
   font-weight: 500;
@@ -15,24 +16,36 @@
   transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
-/* Default: disable hover on all nav links */
+/* Disable hover globally (enabled per page) */
 .navbar .nav-link:hover {
   color: inherit !important;
   border-bottom: none !important;
 }
 
-/* Enable hover ONLY on home page */
+/* Enable hover ONLY on Home Page */
 .home-navbar .nav-link:hover {
   color: #e53935 !important;
 }
 
-/* Transparent navbar */
+/* Active link styling */
+.navbar-nav .nav-link.active {
+  color: #ff5722 !important;
+  font-weight: 700;
+  border-bottom: 2px solid #ff5722;
+}
+
+/* Active link hover on Home */
+.home-navbar .navbar-nav .nav-link.active:hover {
+  color: #e53935 !important;
+  border-bottom-color: #e53935;
+}
+
+/* ============ Navbar Background Styles ============ */
 .navbar-transparent {
   background-color: transparent !important;
   transition: background-color 0.3s ease;
 }
 
-/* Colored navbar */
 .navbar-colored {
   background-color: rgba(255, 255, 255, 0.95) !important;
   transition: background-color 0.3s ease;
@@ -40,30 +53,16 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Nav link color in transparent navbar */
+/* Nav Link Colors based on background */
 .navbar-transparent .navbar-nav .nav-link {
   color: white !important;
 }
 
-/* Nav link color in colored navbar (default) */
 .navbar-colored .navbar-nav .nav-link {
   color: #333 !important;
 }
 
-/* Active nav-link */
-.navbar-nav .nav-link.active {
-  color: #ff5722 !important;
-  font-weight: 700;
-  border-bottom: 2px solid #ff5722;
-}
-
-/* Active link hover (only on home) */
-.home-navbar .navbar-nav .nav-link.active:hover {
-  color: #e53935 !important;
-  border-bottom-color: #e53935;
-}
-
-/* Center menu on large screens */
+/* ============ Responsive ============ */
 @media (min-width: 992px) {
   .navbar-nav.mx-auto {
     justify-content: center;
@@ -71,7 +70,6 @@
   }
 }
 
-/* Mobile specific styles */
 @media (max-width: 991.98px) {
   .navbar-collapse {
     background-color: rgba(255, 255, 255, 0.95);
@@ -84,7 +82,6 @@
     font-size: 1.1rem;
   }
 
-  /* Mobile: disable hover unless on home */
   .navbar-collapse .nav-link:hover {
     color: inherit !important;
   }
@@ -94,9 +91,7 @@
   }
 }
 
-/* ==========================
-   Disable hover effects on Cart Page
-   ========================== */
+/* ============ Cart Page Specific ============ */
 .cart-page .nav-link:hover {
   color: inherit !important;
   border-bottom: none !important;
@@ -108,6 +103,8 @@
   color: #ff5722 !important;
   border-bottom-color: #ff5722 !important;
 }
+
+/* ============ Cart Badge ============ */
 .cart-badge {
   font-size: 0.65rem;
   min-width: 1.1rem;
@@ -117,4 +114,9 @@
   align-items: center;
   padding: 0.2rem;
   color: white;
+  background-color: #ff5722;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
 }

@@ -1,11 +1,18 @@
+/* ========================
+   Food Display Section
+======================== */
 .food-display {
   background-color: #fdfdfd;
   overflow-x: hidden; /* Prevent side scroll on mobile */
+  padding: 2rem 4rem; /* Default padding for larger screens */
 }
 
+/* Responsive padding on small screens */
 @media (max-width: 576px) {
   .food-display {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }

@@ -1,3 +1,4 @@
+/* ============ Header Carousel Styles ============ */
 .header-carousel .header-slide {
   height: 100vh;
   background-size: cover;
@@ -5,21 +6,33 @@
   position: relative;
 }
 
+/* ============ Background Image Classes ============ */
 .bg-img-1 {
   background-image: url('../../img/bg1.jpg');
 }
+
 .bg-img-2 {
-background-image: url('../../img/bg2.jpg') ;
+  background-image: url('../../img/bg2.jpg');
 }
-.bg-img-3{
+
+.bg-img-3 {
   background-image: url('../../img/bg3.jpg');
 }
-.bg-img-4{
+
+.bg-img-4 {
   background-image: url('../../img/bg4.jpg');
 }
 
+/* ============ Overlay Styling ============ */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
   height: 100%;
+  width: 100%;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

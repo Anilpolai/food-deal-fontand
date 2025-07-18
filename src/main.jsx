@@ -9,7 +9,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Storecontextprovider from './context/Storecontextprovider.jsx'; // Your context provider
+import Storecontextprovider from './Context/Storecontext.jsx';
 
 
 createRoot(document.getElementById('root')).render(

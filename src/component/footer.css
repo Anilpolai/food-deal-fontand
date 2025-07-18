@@ -1,17 +1,20 @@
+/* Import brand font */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+/* ============ Footer Brand ============ */
 .footer-brand {
   font-family: 'Pacifico', cursive;
   font-size: 1.8rem;
   color: #ff5722;
 }
 
+/* ============ Footer Links ============ */
 .footer-link {
   color: #ccc;
   text-decoration: none;
   display: block;
   margin-bottom: 8px;
-  transition: 0.3s;
+  transition: color 0.3s ease, padding-left 0.3s ease;
 }
 
 .footer-link:hover {
@@ -19,11 +22,34 @@
   padding-left: 5px;
 }
 
+/* ============ Social Media Icons ============ */
 .social-icons a {
   font-size: 1.2rem;
-  transition: 0.3s;
+  color: #ccc;
+  margin-right: 12px;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
   color: #ff5722;
+}
+
+/* ============ Optional Footer Layout Enhancements ============ */
+.footer {
+  background-color: #222;
+  padding: 2rem 1rem;
+  color: #ccc;
+}
+
+.footer-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 1.5rem;
+  border-top: 1px solid #444;
+  padding-top: 1rem;
 }

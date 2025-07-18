@@ -1,3 +1,4 @@
+/* ============ Food Item Card ============ */
 .food-item {
   width: 100%;
   height: 100%;
@@ -13,18 +14,24 @@
   background-color: #f9f9f9;
 }
 
+/* ============ Food Item Image ============ */
 .food-item-img {
   height: 200px;
   object-fit: cover;
   width: 100%;
+  display: block;
 }
 
+/* ============ Food Item Description Text ============ */
 .food-item .card-text {
   min-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
+/* ============ Food Item Rating Styling ============ */
 .food-item-rating span {
   font-size: 1rem;
+  color: #ffa500; /* Optional: star yellow color */
 }
